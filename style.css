@@ -60,7 +60,7 @@ button:hover {
 }
 
 .main-container {
-  margin: 0;
+  margin: 0 3rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -99,7 +99,6 @@ button:hover {
 .social-media {
   display: flex;
   align-items: center;
-  margin-top: 3rem;
   font-family: "Poppins";
   font-size: 0.8rem;
   font-weight: 600;
@@ -108,21 +107,27 @@ button:hover {
 .social-media {
   display: flex;
   justify-content: space-between;
+  height: 4rem;
 }
 
 .icon-flex-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 30%;
-  height: 2rem;
 }
 
 .icon {
-  height: 100%;
+  height: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon:hover {
+  height: 2.8rem;
 }
 
 .logo-web {
-  width: 18vw;
+  width: 400px;
 }
 
 .logo-web:hover {
@@ -133,7 +138,7 @@ footer {
   display: flex;
   justify-content: center;
   position: fixed;
-  bottom: 3rem;
+  bottom: 2rem;
   width: 100%;
 }
 
@@ -141,4 +146,81 @@ footer span {
   font-family: "Poppins";
   font-weight: 600;
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .logo-web {
+    width: 300px;
+  }
+
+  .header {
+    margin-bottom: 3rem;
+  }
+
+  .description {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .main-container {
+    flex-direction: column-reverse;
+  }
+
+  .logo-web {
+    width: 200px;
+    margin-bottom: 1rem;
+  }
+
+  .header h1 {
+    font-size: 3rem;
+  }
+
+  .header h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 564px) {
+  .logo-web {
+    width: 150px;
+  }
+
+  .header h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .header h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 495px) {
+  .main-container {
+    margin: 0;
+  }
+
+  .header-container {
+    padding: 0 8vw;
+  }
+
+  footer span {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 411px) {
+  .header {
+    margin-bottom: 1rem;
+  }
+
+  .icon {
+    height: 1.5rem;
+  }
+
+  .icon-flex-container {
+    width: 70%;
+  }
 }
