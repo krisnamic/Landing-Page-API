@@ -92,12 +92,14 @@ button:hover {
   font-size: 0.8rem;
   font-weight: 600;
   justify-content: space-between;
-  height: 4.2rem;
+  height: 4.5rem;
+  width: max-content;
 }
 
 .icon-flex-container {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 3rem;
 }
 
