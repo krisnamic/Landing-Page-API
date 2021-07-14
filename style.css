@@ -8,7 +8,6 @@ body {
   background-color: #2e3131;
   color: #dddddd;
   height: 100vh;
-  /* overflow: hidden; */
 }
 
 h1 {
@@ -92,10 +91,6 @@ button:hover {
   font-family: "Poppins";
   font-size: 0.8rem;
   font-weight: 600;
-}
-
-.social-media {
-  display: flex;
   justify-content: space-between;
   height: 4.2rem;
 }
@@ -103,6 +98,7 @@ button:hover {
 .icon-flex-container {
   display: flex;
   align-items: center;
+  height: 3rem;
 }
 
 .icon {
@@ -116,7 +112,7 @@ button:hover {
 }
 
 .logo-web {
-  width: 400px;
+  width: 320px;
   transition: all 0.7s ease-in-out;
 }
 
@@ -148,6 +144,10 @@ footer span {
     margin-bottom: 3rem;
   }
 
+  .header h1 {
+    font-size: 2.8rem;
+  }
+
   .description {
     max-width: 100%;
   }
@@ -159,16 +159,21 @@ footer span {
   }
 
   .logo-web {
-    width: 200px;
+    width: 180px;
+    margin-bottom: 1rem;
+  }
+
+  .header {
     margin-bottom: 1rem;
   }
 
   .header h1 {
-    font-size: 3rem;
+    text-align: center;
   }
 
   .header h3 {
     font-size: 1.5rem;
+    text-align: center;
   }
 }
 
@@ -179,12 +184,10 @@ footer span {
 
   .header h1 {
     font-size: 2.5rem;
-    text-align: center;
   }
 
   .header h3 {
     font-size: 1rem;
-    text-align: center;
   }
 }
 
