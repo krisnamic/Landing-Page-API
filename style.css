@@ -224,3 +224,158 @@ footer span {
     width: 70%;
   }
 }
+
+img[alt="shark"] {
+  display: none;
+  position: absolute;
+}
+
+#shark-1 {
+  display: none;
+  animation: shark-1-animation 2s;
+  top: -10%;
+  left: 0%;
+  transform: rotate(25deg);
+}
+
+#shark-2 {
+  display: none;
+  animation: shark-2-animation 2s;
+  left: -10%;
+  bottom: 100%;
+  transform: rotate(90deg);
+}
+
+#shark-3 {
+  display: none;
+  animation: shark-3-animation 2s;
+  right: -10%;
+  bottom: 0%;
+  transform: rotate(-90deg);
+}
+
+#shark-4 {
+  display: none;
+  animation: shark-4-animation 2s;
+  right: -20%;
+  bottom: 0%;
+  transform: translateX(-20%);
+}
+
+@keyframes shark-4-animation {
+  0% {
+    transform: translateX(-20%);
+  }
+
+  25% {
+    transform: translateX(-10%);
+  }
+
+  50% {
+    transform: translateX(-20%);
+  }
+
+  75% {
+    transform: translateX(-10%);
+  }
+
+  100% {
+    transform: translateX(-20%);
+  }
+}
+
+@keyframes shark-3-animation {
+  0% {
+    right: -10%;
+    bottom: 100%;
+    transform: rotate(-90deg);
+  }
+
+  25% {
+    right: -10%;
+    bottom: 75%;
+    transform: rotate(-125deg);
+  }
+
+  50% {
+    right: -10%;
+    bottom: 50%;
+    transform: rotate(-90deg);
+  }
+
+  75% {
+    right: -10%;
+    bottom: 25%;
+    transform: rotate(-125deg);
+  }
+
+  100% {
+    right: -10%;
+    bottom: 0%;
+    transform: rotate(-90deg);
+  }
+}
+
+@keyframes shark-2-animation {
+  0% {
+    left: -10%;
+    bottom: 0%;
+    transform: rotate(90deg);
+  }
+
+  25% {
+    left: -10%;
+    bottom: 25%;
+    transform: rotate(125deg);
+  }
+
+  50% {
+    left: -10%;
+    bottom: 50%;
+    transform: rotate(90deg);
+  }
+
+  75% {
+    left: -10%;
+    bottom: 75%;
+    transform: rotate(125deg);
+  }
+
+  100% {
+    left: -10%;
+    bottom: 100%;
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes shark-1-animation {
+  0% {
+    top: -10%;
+    left: 100%;
+    transform: rotate(25deg);
+  }
+
+  25% {
+    top: -10%;
+    left: 75%;
+    transform: rotate(-25deg);
+  }
+
+  50% {
+    top: -10%;
+    left: 50%;
+    transform: rotate(25deg);
+  }
+
+  75% {
+    top: -10%;
+    left: 25%;
+    transform: rotate(-25deg);
+  }
+
+  100% {
+    top: -10%;
+    left: 0%;
+    transform: rotate(25deg);
+  }
+}
