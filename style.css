@@ -8,6 +8,7 @@ body {
   background-color: #2e3131;
   color: #dddddd;
   height: 100vh;
+  /* overflow: hidden; */
 }
 
 h1 {
@@ -40,23 +41,12 @@ button {
   font-weight: 600;
   font-family: "Rubik";
   font-size: 1rem;
-  transition: background-position 0.2s;
+  transition: background-position 0.8s;
 }
 
 button:hover {
   cursor: pointer;
-  /* -webkit-animation: AnimationName 3s ease; */
-  -moz-animation: AnimationName 0.6s;
-  animation: AnimationName 0.6s;
   background-position: 0% 0%;
-}
-@keyframes AnimationName {
-  0% {
-    background-position: 100% 100%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
 }
 
 .main-container {
@@ -98,7 +88,7 @@ button:hover {
 
 .social-media {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   font-family: "Poppins";
   font-size: 0.8rem;
   font-weight: 600;
@@ -107,30 +97,31 @@ button:hover {
 .social-media {
   display: flex;
   justify-content: space-between;
-  height: 4rem;
+  height: 4.2rem;
 }
 
 .icon-flex-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 30%;
 }
 
 .icon {
   height: 2rem;
   transition: all 0.3s ease-in-out;
+  margin-right: 2rem;
 }
 
 .icon:hover {
-  height: 2.8rem;
+  height: 2.5rem;
 }
 
 .logo-web {
   width: 400px;
+  transition: all 0.7s ease-in-out;
 }
 
 .logo-web:hover {
+  transform: translateY(-1rem);
   cursor: pointer;
 }
 
@@ -218,10 +209,6 @@ footer span {
 
   .icon {
     height: 1.5rem;
-  }
-
-  .icon-flex-container {
-    width: 70%;
   }
 }
 
